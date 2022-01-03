@@ -59,4 +59,8 @@ while True:
 		# control mouse
 		win32api.SetCursorPos((mouse_x, mouse_y))
 	end = time.time()
+
+	# cv2.imwrite(f'screenshot-{end}.png', img)
+	# cv2.imwrite(f'screenshot-{end}-mask.png', yellow)
+	
 	print('time:', end - start)
