@@ -34,7 +34,11 @@ python3 hsv_calc.py
 * 根据窗体位置计算出鼠标的绝对坐标
 * 操作鼠标自瞄
 
-效果为 50 fps 左右
+效果为 30 fps 左右
+
+![](assets/loop_demo.gif)
+
+上图注意鼠标的移动。
 
 ## 使用
 
@@ -54,3 +58,14 @@ dpi_scale = 1.25
 ```
 python3 loop_demo.py
 ```
+
+## Known Issues
+
+* 对于某些情况识别不出，可能的解决方案：
+  * 颜色分割
+  * 目标检测网络
+* 只写了黄色，其他颜色一个原理，还没分析 HSV
+* 日候准备实现 Keyboard Hook，`tab` 切换追踪，`ctrl` 开始或结束追踪
+* 性能有待提高
+  * 以后可能会写 tracing
+  * 可能会用 cpp 全部重写
